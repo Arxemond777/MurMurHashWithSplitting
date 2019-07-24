@@ -2,9 +2,13 @@
 The MurMur hash for hive with splitting
 
 ## API
+```java
 java.math.BigInteger murmurhash.MurMurHash.getSplit(java.lang.String, murmurhash.enums.KeysSplitConfig)
-or
+```
+or  
+```java
 java.math.BigInteger murmurhash.MurMurHash.getSplit(java.lang.String, java.lang.String)
+```
 
 
 ### BUILD WITH TESTS
@@ -40,7 +44,7 @@ java  -cp "/Users/y.glushenkov/IdeaProjects/a/:../murmurhash/target/original-mur
 
 ### Benchmarks
 MacBook pro 2015: 2,9 GHz Intel Core i7; 16 GB 2133 MHz LPDDR3
-
+```
 Result "murmurhash.benchmarks.AppBenchmark.benchMurmurThroughput":
   1.476 ±(99.9%) 0.008 ops/ms [Average]
   (min, avg, max) = (1.468, 1.476, 1.484), stdev = 0.005
@@ -64,4 +68,5 @@ AppBenchmark.benchMurmurAverage               50   avgt   10   0.013 ±  0.001  
 AppBenchmark.benchMurmurAverage              200   avgt   10   0.057 ±  0.001   ms/op
 AppBenchmark.benchMurmurAverage              500   avgt   10   0.153 ±  0.002   ms/op
 AppBenchmark.benchMurmurAverage             1000   avgt   10   0.306 ±  0.003   ms/op
-AppBenchmark.benchMurmurAverage             2000   avgt   10   0.677 ±  0.009   ms/op  
+AppBenchmark.benchMurmurAverage             2000   avgt   10   0.677 ±  0.009   ms/op
+```  
