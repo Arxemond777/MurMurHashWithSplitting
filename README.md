@@ -43,7 +43,7 @@ java  -cp "/Users/y.glushenkov/IdeaProjects/a/:../murmurhash/target/original-mur
 ```
 
 ### Benchmarks
-MacBook pro 2015: 2,9 GHz Intel Core i7; 16 GB 2133 MHz LPDDR3
+MacBook pro 2017: 2,9 GHz Intel Core i7; 16 GB 2133 MHz LPDDR3
 ```
 Result "murmurhash.benchmarks.AppBenchmark.benchMurmurThroughput":
   1.476 ±(99.9%) 0.008 ops/ms [Average]
