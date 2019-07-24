@@ -30,23 +30,23 @@ mvn test
 
 ### RUN JMH TEST
 ```bash
-java -cp target/murmurhash-1.0-SNAPSHOT.jar murmurhash.benchmarks.BenchmarkRunner
+java -cp target/murmur_with_splitting.jar murmurhash.benchmarks.BenchmarkRunner
 ```
 
 ### RUN
 ```bash
-java -jar target/murmurhash-1.0-SNAPSHOT.jar userId 8A
+java -jar target/murmur_with_splitting.jar userId 8A
 
 ```
 
 ### Use as a jar 
 ```bash
-java  -cp "/Users/y.glushenkov/IdeaProjects/myProject/:original-murmurhash-1.0-SNAPSHOT.jar" your.Class
+java  -cp "/Users/y.glushenkov/IdeaProjects/myProject/:original-murmur_with_splitting.jar" your.Class
 
 # Example
 cd /Users/y.glushenkov/IdeaProjects/a/; \
-javac -cp ../murmurhash/target/original-murmurhash-1.0-SNAPSHOT.jar -d ./ src/main/java/a/Main.java; \
-java  -cp "/Users/y.glushenkov/IdeaProjects/a/:../murmurhash/target/original-murmurhash-1.0-SNAPSHOT.jar" a.Main
+javac -cp ../murmurhash/target/original-murmur_with_splitting.jar -d ./ src/main/java/a/Main.java; \
+java  -cp "/Users/y.glushenkov/IdeaProjects/a/:../murmurhash/target/original-murmur_with_splitting.jar" a.Main
 ```
 
 ### Benchmarks

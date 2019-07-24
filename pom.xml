@@ -49,6 +49,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
+                    <finalName>murmur_with_splitting</finalName>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
