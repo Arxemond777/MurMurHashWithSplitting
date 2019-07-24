@@ -69,6 +69,6 @@ public class AppBenchmark {
             plan.sb.append(i).append(plan.random);
         }
 
-        return plan.murMurHash.getSplit(plan.sb.toString(), plan.keysSplitConfig);
+        return plan.murMurHash.getSplitBigInteger(plan.sb.toString(), plan.keysSplitConfig);
     }
 }

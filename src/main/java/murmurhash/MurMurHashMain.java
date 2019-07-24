@@ -32,6 +32,6 @@ public class MurMurHashMain {
         final String userId = args[0];
         final String splitCfgKey = args[1];
 
-        new MurMurHash().getSplit(userId, splitCfgKey);
+        new MurMurHash().getSplitBigInteger(userId, splitCfgKey);
     }
 }

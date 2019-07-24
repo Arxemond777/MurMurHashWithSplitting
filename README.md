@@ -2,12 +2,19 @@
 The MurMur hash for hive with splitting
 
 ## API
+Return int
 ```java
-java.math.BigInteger murmurhash.MurMurHash.getSplit(java.lang.String, murmurhash.enums.KeysSplitConfig)
+int murmurhash.MurMurHash.getSplit(java.lang.String, murmurhash.enums.KeysSplitConfig)
 ```
-or  
 ```java
-java.math.BigInteger murmurhash.MurMurHash.getSplit(java.lang.String, java.lang.String)
+int murmurhash.MurMurHash.getSplit(java.lang.String, java.lang.String)
+```
+Return BigInteger
+```java
+java.math.BigInteger murmurhash.MurMurHash.getSplitBigInteger(java.lang.String, murmurhash.enums.KeysSplitConfig)
+```
+```java
+java.math.BigInteger murmurhash.MurMurHash.getSplitBigInteger(java.lang.String, java.lang.String)
 ```
 
 

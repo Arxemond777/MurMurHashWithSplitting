@@ -81,11 +81,19 @@ public class MurMurHash {
         return ((h.and(BigInteger.valueOf(Long.MAX_VALUE))).mod(extractSplit)).add(BigInteger.valueOf(1L)); //(h & 0x7FFFFFFFFFFFFFFFL) % splits + 1 0x7FFFFFFFFFFFFFFF -Long> 0x7FFFFFFFFFFFFFFFL
     }
 
-    public BigInteger getSplit(final String userId, final KeysSplitConfig keysSplitConfig) {
-        return this.getSplit(userId, keysSplitConfig.getValueOfKey());
+    public int getSplit(final String userId, final KeysSplitConfig keysSplitConfig) {
+        return this.getSplitBigInteger(userId, keysSplitConfig.getValueOfKey()).intValueExact();
     }
 
-    public BigInteger getSplit(final String userId, String splitCfgKey) {
+    public int getSplit(final String userId, String splitCfgKey) {
+        return this.getSplitBigInteger(userId, splitCfgKey).intValueExact();
+    }
+
+    public BigInteger getSplitBigInteger(final String userId, final KeysSplitConfig keysSplitConfig) {
+        return this.getSplitBigInteger(userId, keysSplitConfig.getValueOfKey());
+    }
+
+    public BigInteger getSplitBigInteger(final String userId, String splitCfgKey) {
         splitCfgKey = splitCfgKey.toUpperCase();
 
         validateSplitCfgKey(splitCfgKey);
