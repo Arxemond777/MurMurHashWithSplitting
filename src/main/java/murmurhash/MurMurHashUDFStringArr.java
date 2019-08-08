@@ -8,27 +8,17 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Description(
-        name = "murMurHashUDF",
+        name = "murMurHashUDFStringArr",
         value = "_FUNC_(str, str) - Converts a userId&splitCfgKey by the murmur hash function algorithm",
         extended = "Example:\n" +
-                "  > SELECT murMurHashUDF(userId, splitCfgKey) FROM users u;"
+                "  > SELECT murMurHashUDFStringArr(userId, splitCfgKey) FROM users u;"
 )
-public class MurMurHashUDF extends UDF {
+public class MurMurHashUDFStringArr extends UDF {
 
     private final MurMurHash murMurHashInst;
 
-    public MurMurHashUDF() {
+    public MurMurHashUDFStringArr() {
         this.murMurHashInst = new MurMurHash();
-    }
-
-    public String evaluate(final String userId, final String splitCfgKey) {
-        return String.valueOf(murMurHashInst.getSplit(userId, splitCfgKey));
-    }
-
-    public List<String> evaluate(final List<String> userIdList, final String splitCfgKey) {
-        return userIdList.stream()
-                .map(userId -> String.valueOf(murMurHashInst.getSplit(userId, splitCfgKey)))
-                .collect(Collectors.toList());
     }
 
     public String[] evaluate(final String[] userIdArr, final String splitCfgKey) {

@@ -20,7 +20,17 @@ java.math.BigInteger murmurhash.MurMurHash.getSplitBigInteger(java.lang.String, 
 [a java example](https://github.com/klout/brickhouse/blob/master/src/main/java/brickhouse/udf/bloom/BloomAndUDF.java)  
 [a scala example](https://snowplowanalytics.com/blog/2013/02/08/writing-hive-udfs-and-serdes/)  
 ```java
-java.math.BigInteger murmurhash.MurMurHashUDF.evaluate(java.lang.String, java.lang.String)
+java.lang.String murmurhash.MurMurHashUDF.evaluate(java.lang.String, java.lang.String)
+// or
+java.lang.List<String> murmurhash.MurMurHashUDF.evaluate(java.lang.List<String>, java.lang.String)
+// or
+java.lang.String[] murmurhash.MurMurHashUDF.evaluate(java.lang.String[], java.lang.String)
+```
+```java
+java.lang.List<String> murmurhash.MurMurHashUDFList.evaluate(java.lang.List<String>, java.lang.String)
+```
+```java
+java.lang.List<String> murmurhash.MurMurHashUDFStringArr.evaluate(java.lang.List<String>, java.lang.String)
 ```
 
 ### BUILD WITH TESTS
