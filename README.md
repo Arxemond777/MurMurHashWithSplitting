@@ -30,7 +30,7 @@ java.lang.String[] murmurhash.MurMurHashUDF.evaluate(java.lang.String[], java.la
 java.lang.List<String> murmurhash.MurMurHashUDFList.evaluate(java.lang.List<String>, java.lang.String)
 ```
 ```java
-java.lang.List<String> murmurhash.MurMurHashUDFStringArr.evaluate(java.lang.List<String>, java.lang.String)
+java.lang.String[] murmurhash.MurMurHashUDFStringArr.evaluate(java.lang.String[], java.lang.String)
 ```
 
 ### BUILD WITH TESTS
